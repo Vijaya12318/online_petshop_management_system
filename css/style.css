@@ -1,0 +1,273 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:Arial;
+	overflow-x: hidden;
+}
+h1{
+	margin:0;
+}
+.topnav{
+	position:relative;
+	overflow:hidden;
+	/*  disc: inline-block;*/
+	
+	border-radius:10px;
+}
+.topnav a{
+	float:left;
+	display:block;
+	color:#f2f2f2;
+	text-align:center;
+	padding:14px 16px;
+	padding-bottom:3px;
+	text-decoration:none;
+	font-size:17px;
+	margin-right:25px;
+	margin-left:5px;
+	transition-duration:0.4s;
+}
+.topnav a:not(:first-child){
+	float:right;
+}
+.topnav a:hover{
+	/*background-color:rgba(0,0,0,0.5);*/
+	color:black;
+	border-bottom:2px solid orange;
+}
+.topnav a.active{
+	background-color:#4CAF50;
+	color:white;
+}
+.topnav .icon{
+	 display:none;
+}
+@media screen and (max-width:600px){
+	.topnav a:not(:first-child){
+		display:none;
+	}
+	.topnav a.icon{
+		float:right;
+		display:block;
+	}
+}
+@media screen and (max-width:600px){
+	.topnav.responsive{
+	background-color:#333;
+	position:relative;
+	}
+	.topnav.responsive .icon{
+		position:absolute;
+		right:0;
+		top:0;
+	}
+	.topnav.responsive a{
+		float:none;
+		display:block;
+		text-align:left;
+	}	
+}
+.hero_main{
+	position:relative;
+	width:100%;
+	background-image:linear-gradient(to top right,rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url(https://www.australianseed.com/auto/thumbnail/persistent/catalogue_images/products/cosmos-sensation-dazzler.jpg?maxheight=500&style=cropped&maxwidth=500);
+	background-size:cover;
+	background-position:center;
+	height:100vh;
+	-webkit-clip-path:polygon(0 0,100% 0,100% 80%,0 100%);
+}
+.hero-text-box{
+	position:absolute;
+	width:1140px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	font-weight:300;
+	color:white;
+	font-weight:300;
+	font-size:40px;
+}
+@media screen and (max-width:1140px){
+	.hero-text-box{
+		width:100%;
+		font-size:15px;
+	}
+}
+@media screen and (max-width:600px){
+	.hero-text-box{
+		width:100%;
+		font-size:15px;
+	}
+	.btn{
+		margin-left:10px;
+		display:block;
+		margin-top:20px;
+	}
+	.btn-take{
+		width:18vw;
+	}
+	.btn-more{
+		width:30vw;
+	}
+}
+.btn{
+	text-decoration:none;
+	font-size:8px;
+	border-radius:8px;
+	/*background-color:aqua;*/
+	padding:2px 15px;
+}
+.btn-take{
+	color:white;
+	background-color:#bb7900;
+	background-color:#bb7900;
+	border:2px solid #bb7900;
+	transition-duration:o.3s;
+}
+.btn-take:hover{
+	background-color:#996300;
+	border:2px solid #996300;
+}
+.btn-more{
+	color:white;
+	border:2px solid #bb7900;
+}
+ 
+ .section_globe{
+	/* background-color:green;*/
+	 height:100vh;
+	 position:relative;
+	 width:100vw;
+ }
+ .col_1_of_2{
+	 width:50%;
+	 float:left;
+ }
+ .main_head{
+	 margin:40px 0px;
+ }
+ .globe_head{
+	 text-align:center;
+	 font-size:30px;
+	 background-image: linear-gradient(to right,#16A085,#F4D03F);
+	 -webkit-background-clip:text;
+	 color:transparent;
+ }
+ .sub_head{
+	 text-transform:uppercase;
+	 font-size:30px;
+ }
+ .composition{
+	 background-color:red;
+	 position:relative;
+ }
+ .composition_photo{
+	 position:absolute;
+	 width:55%;
+	 z-index:10;
+	 box-shadow:9 15px 40px rgpa(0,0,0,0.4);
+	 border-radius:3px;
+	 opacity:1;
+	 transition-duration:0.4s;
+	 /*outline-color:aqua;*/
+	 outline:3px solid black;
+	 outline-offset:20;
+ }
+ .composition_photo_1{
+	 left:0;
+	 top:-20px;
+ }
+ .composition_photo_2{
+	 right:0;
+	 top:20px;
+ }
+ .composition_photo_3{
+	 left:20%;
+	 top:100px;
+ }
+ .composition_photo:hover{
+	 transform:scale(1.05) translateY(-5px);
+	 box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+	 z-index:20;
+	  outline:15px solid aqua;
+ }
+ .composition:hover
+ .composition_photo:not(:hover){
+	 transform:scale(0.95);
+	 opacity:0;
+ }
+ .left_para{
+	 width:85%;
+	 color:grey;
+	 text-align:left;
+ }
+ .btn-anchor{
+	 background-color:orange;
+	 color:white;
+ }
+ @media screen and (max-width:600px){
+	 .composition_photo{
+		 position:relative;
+		 width:100%;
+	 }
+	 .composition_photo_3{
+		 left:0;
+		 top:60px;
+		 }
+}
+.section_features{
+	position:relative;
+	background-image:linear-gradient(to right bottom,rgba(182,213,111,0.0),rgba(40,180,133,0.8)),url(https://www.australianseed.com/auto/thumbnail/persistent/catalogue_images/products/cosmos-sensation-dazzler.jpg?maxheight=500&style=cropped&maxwidth=500);
+	background-position:center;
+	background-size:cover;
+	height:100vh;
+	width:100vw;
+	@-webkit-clip-path:polygon(0 20% 100% 0,100% 80%,0 100%);
+}
+.inner_fea{
+	width:90%;
+	position:absolute;
+	margin-top:200px;
+	margin-left:5%;
+}
+.grid-container{
+	display:grid;
+	grid-gap:50px 100px;
+	grid-template-columns:auto auto auto auto;
+	padding:10px;
+}
+.grid-item{
+	/*box-sizing:border-box;*/
+	background-color:rgba(255,255,255,0.7);
+	height:55vh;
+	width:90%;
+	padding:20px;
+	border-radius:5px;
+	text-align:center;
+	color:#575656;
+	box-shadow:0 15px 40px rgba(0,0,0,0.4);
+	transition-duration:0.4s;
+	
+}
+.icon{
+	transform:scale(3);
+	box-sizing:border-box;
+	padding-top:20px;
+	padding-bottom:20px;
+	color:rgba(182,213,111,0.8);
+}
+.fea_head{
+	margin:10px 0;
+	margin-top:50px;
+	font-size:18px;
+	text-transform:uppercase;
+}
+.fea_text{
+	letter-spacing:1px;
+	text-align:center;
+}
+.grid-item:hover{
+	
+	transform:scale(1.2) translateY(-7px);
+	box-shadow:0 25px 40px rgba(0,0,0,0.5);
+}
